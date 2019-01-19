@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: host_preparation
   author: Jirayut Nimsaeng
   description: Ansible role to prepare Ubuntu host.
   license: MIT
@@ -9,10 +10,7 @@ galaxy_info:
     - xenial
   galaxy_tags:
     - system
-    - ntp
     - aptcacher
     - hostname
-    - tuning
-    - user
     - update
 dependencies: []

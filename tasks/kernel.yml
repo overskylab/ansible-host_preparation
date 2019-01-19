@@ -1,12 +1,9 @@
 ---
 - block: # Install latest kernel and check if it needs to reboot
-
   - name: Install latest kernel from Xenial
     apt:
-       pkg: "{{ item }}"
+       pkg: "{{ host_preparation_latest_kernel }}"
        state: latest
-    with_items:
-      - linux-generic-lts-xenial
     when: host_preparation_install_latest_kernel
 
   - name: Check if a reboot is required
